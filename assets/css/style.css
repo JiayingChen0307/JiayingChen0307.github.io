@@ -485,10 +485,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -506,7 +502,6 @@ section {
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
-  text-transform: uppercase;
   color: #272829;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
@@ -520,6 +515,10 @@ section {
   margin-right: 0;
 }
 
+.portfolio .portfolio-container {
+  position:relative;
+}
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -527,10 +526,14 @@ section {
   z-index: 1;
 }
 
+.portfolio .portfolio-wrap .video-wrapper{
+  margin-right: 30;
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -546,7 +549,7 @@ section {
   right: 0;
   bottom: -60px;
   z-index: 3;
-  position: absolute;
+  position: relative;
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
@@ -558,7 +561,7 @@ section {
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {

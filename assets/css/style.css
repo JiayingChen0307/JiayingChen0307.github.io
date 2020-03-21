@@ -527,7 +527,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .video-wrapper{
-  margin-right: 30;
+  text-align:center;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -541,6 +541,11 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+}
+
+.portfolio .portfolio-wrap .citation{
+    font-size: 13px;
+    color:grey;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
